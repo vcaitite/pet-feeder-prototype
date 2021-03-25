@@ -1,5 +1,8 @@
 #include "wifi_connection.h"
 
+const char * user = "MOL III";
+const char * pass = "1288moradiaLI";
+
 void initialize_wifi_connection(const char* user, const char* password){
     //Inicializa a conexão com a internet com a rede e a senha
     WiFi.begin(user, password);

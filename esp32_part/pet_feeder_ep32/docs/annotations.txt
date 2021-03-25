@@ -1,1 +1,0 @@
-Firebase.begin(HOST, CHAVE_SECRETA);
