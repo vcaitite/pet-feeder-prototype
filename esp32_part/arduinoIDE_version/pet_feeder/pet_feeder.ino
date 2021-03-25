@@ -43,4 +43,5 @@ void setup() {
 void loop() {
   String aux3 = read_firebase_command();
   Serial.println("command: " + aux3);
+  delay(5000)
 }
