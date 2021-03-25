@@ -24,11 +24,17 @@ void initialize_wifi_connection(const char* user, const char* password){
 } 
 
 String read_firebase_command(){
-  String command = Firebase.getString("petFeeder/command");
+  String command = "";
+  command = Firebase.getString("petFeeder/command");
+  while (command.equals("") == true){
+    command = Firebase.getString("petFeeder/command");
+    delay(10);
+  }
   // Enviar confirmação de leitura:
   Firebase.setString("petFeeder/read_confirmation", "received");
   while (Firebase.failed()){
     Firebase.setString("petFeeder/read_confirmation", "received");
+    delay(10);
   }
   return command;
 }
@@ -43,5 +49,5 @@ void setup() {
 void loop() {
   String aux3 = read_firebase_command();
   Serial.println("command: " + aux3);
-  delay(5000)
+  delay(5000);
 }
