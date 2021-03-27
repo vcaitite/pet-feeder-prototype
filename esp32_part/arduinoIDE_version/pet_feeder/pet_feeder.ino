@@ -1,5 +1,6 @@
 #include <WiFi.h>
 #include "FirebaseESP32.h"
+#include <ESP32Servo.h>
 
 /* Declaracao das variaveis de conexao wifi */
 
@@ -23,6 +24,7 @@ int tempo;      // realiza a contagem de tempo
 int cancel;     // variavel auxiliar
 String aux2;    // armazena o comando do app
 char aux3='f';  // armazena o comando dos botoes
+Servo srv;
 
 /* Funcao para inicializar a conexao com a internet com a rede e a senha */
 
@@ -67,9 +69,11 @@ String read_firebase_command() {
 void alimentar() {
   digitalWrite(led_b, LOW);                     // indica que nao esta contando tempo
   Serial.println("Alimentando!");
-  digitalWrite(servo, LOW);
+  /* Abrir: */
+  srv.write(50);
   delay(1500);                                  // tempo que a comida cai
-  digitalWrite(servo, HIGH);
+  /* Fechar: */
+  srv.write(135);
 }
 
 /* setup: executado apenas uma vez */
@@ -94,6 +98,8 @@ void setup() {
   //inicializacoes
   digitalWrite(led_a, LOW);
   digitalWrite(led_b, LOW);
+  srv.attach(servo);
+  srv.write(135); // comeca fechado
 }
 
 /* loop: executado indefinidamente */
