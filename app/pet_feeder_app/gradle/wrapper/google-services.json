@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095553753968",
+    "firebase_url": "https://pet-feeder-17b78-default-rtdb.firebaseio.com",
+    "project_id": "pet-feeder-17b78",
+    "storage_bucket": "pet-feeder-17b78.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095553753968:android:d7e618d8f90b7714ffa5b5",
+        "android_client_info": {
+          "package_name": "com.unidata.pet_feeder_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095553753968-6c786268k1u27fn3lq4dt1fmltn0gia1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC_B3Y-UrNYIMlfv7utvKDBN1BK2Y0gXg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095553753968-6c786268k1u27fn3lq4dt1fmltn0gia1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

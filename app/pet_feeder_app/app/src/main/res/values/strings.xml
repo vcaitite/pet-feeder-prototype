@@ -9,4 +9,14 @@
     <string name="status_text">Status:</string>
     <string name="Status_hint">Status</string>
     <string name="send_bt_text">Enviar</string>
+    <string name="invalid_command">comando inválido</string>
+    <string name="feed_now_status">Alimentação imediata.</string>
+    <string name="feed_4_status">Alimentar a cada 4 horas.</string>
+    <string name="feed_6_status">Alimentar a cada 6 horas.</string>
+    <string name="feed_8_status">Alimentar a cada 8 horas.</string>
+    <string name="last_command_text">Último comando enviado</string>
+    <string name="last_command_status_text">Status do último comando</string>
+    <string name="fail_to_read_status">Falha ao ler o status</string>
+    <string name="sent">Comando enviado.</string>
+    <string name="received">Comando enviado e recebido.</string>
 </resources>
