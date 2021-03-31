@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">pet_feeder_app</string>
+    <string name="title">Pet Feeder</string>
+    <string name="command">Comando:</string>
+    <string name="feed_now">Alimentar agora</string>
+    <string name="feed_in_four">Alimentar a cada 4 horas</string>
+    <string name="feed_in_six">Alimentar a cada 6 horas</string>
+    <string name="feed_in_eight">Alimentar a cada 8 horas</string>
+    <string name="status_text">Status:</string>
+    <string name="Status_hint">Status</string>
+    <string name="send_bt_text">Enviar</string>
+</resources>
